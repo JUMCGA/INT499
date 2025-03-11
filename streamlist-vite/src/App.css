@@ -1,0 +1,197 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #EDE7F6; /* Soft Lavender */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff;
+}
+
+/* Main App Container */
+.App {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* Dark Mode Toggle Button */
+.toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.toggle-button {
+  padding: 12px 18px;
+  background-color: #7851A9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #5A3C78;
+}
+
+/* Navigation Bar - Full Width */
+nav {
+  background-color: #7851A9; /* Royal Purple */
+  width: 100vw; /* Make it span full width */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 50px; /* Increase spacing between links */
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 12px 20px;
+  transition: 0.3s;
+  border-radius: 8px;
+  color: #EDE7F6; /* Soft Lavender */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #A98BCC; /* Light Purple */
+  color: white;
+}
+
+/* Fix icon alignment */
+.material-icons {
+  font-size: 26px;
+  vertical-align: middle;
+  margin-right: 10px; /* Space between icon and text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Page Container - Make it Wider */
+.page-container {
+  background: white;
+  padding: 50px;
+  margin: 50px auto;
+  width: 85%;
+  max-width: 1000px; /* Keeps it from getting too wide */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center all text inside */
+  transition: background-color 0.3s ease-in-out;
+}
+
+body.dark-mode .page-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Center the title */
+h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+/* StreamList Form - Align Input & Button */
+form {
+  background: white;
+  padding: 25px;
+  margin: 25px auto;
+  width: 65%;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+body.dark-mode form {
+  background-color: #1e1e1e;
+}
+
+input {
+  padding: 14px;
+  width: 75%;
+  border: 2px solid #A98BCC; /* Light Purple Border */
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+button {
+  padding: 14px 20px;
+  background-color: #7851A9; /* Royal Purple */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #5A3C78; /* Darker Purple */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .page-container {
+    width: 95%;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    width: 100%;
+    padding: 15px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .page-container {
+    width: 95%;
+    padding: 25px;
+  }
+}
