@@ -1,0 +1,151 @@
+.movie-details {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.back-button {
+    background-color: #7851A9;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.back-button:hover {
+    background-color: #5A3C78;
+}
+
+.movie-details-poster {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.movie-details h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #7851A9;
+}
+
+.movie-details p {
+    margin: 0.5rem 0;
+}
+
+/* Cast Grid */
+.cast-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.cast-member {
+    width: 120px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cast-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cast-photo.placeholder {
+    background-color: #ccc;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Cast toggle button */
+button {
+    margin-top: 1rem;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #7851A9;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5A3C78;
+}
+
+/* Dark Mode Support */
+body.dark-mode .movie-details {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .movie-details h2 {
+    color: #A98BCC;
+}
+
+body.dark-mode .cast-photo.placeholder {
+    background-color: #555;
+    color: #ccc;
+}
+
+body.dark-mode button,
+body.dark-mode .back-button {
+    background-color: #5A3C78;
+    color: white;
+    border: 1px solid #A98BCC;
+}
+
+body.dark-mode button:hover,
+body.dark-mode .back-button:hover {
+    background-color: #7851A9;
+}
+.movie-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.rating-badge {
+    background-color: #7851A9; /* Make it purple */
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.genre-badge {
+    background-color: #A98BCC;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
