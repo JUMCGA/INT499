@@ -1,0 +1,118 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #6a41a1;
+    padding: 10px 20px;
+}
+
+/* Growable center-aligned link section */
+.nav-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+/* Right side — pushed to the edge */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Dark mode toggle */
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+/* User info and dropdown */
+.user-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #222;
+    border-radius: 6px;
+    padding: 0.5rem;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu button {
+    all: unset;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 12px;
+    display: inline-block;
+    white-space: nowrap;
+    min-width: 80px;
+    border-radius: 4px;
+    background-color: #444;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu button:hover {
+    background-color: #555;
+}
+.cart-link {
+    position: relative;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
