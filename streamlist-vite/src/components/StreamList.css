@@ -1,0 +1,202 @@
+.page-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: black;
+}
+
+body.dark-mode .page-container,
+body.dark-mode h1 {
+    color: white;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: #7851A9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5A3C78;
+}
+
+/* Search and Form UI */
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin: 1rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #A98BCC;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode input {
+    background-color: #222;
+    color: white;
+    border: 1px solid #666;
+}
+
+/* List cards */
+.list-card {
+    background: #f8f8f8;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    color: black;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.list-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.list-description {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.list-actions button {
+    background: #8b0000;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.list-actions button:hover {
+    background: #b22222;
+}
+
+/*Movie cards*/
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.movie-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.movie-card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.movie-info h3 {
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+}
+
+.movie-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.movie-info button {
+    margin-top: 8px;
+    width: 100%;
+}
+
+.saved-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 3px 6px;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: black;
+}
+
+.badge.subscription { background-color: #d0f0fd; }
+.badge.free         { background-color: #dfffd6; }
+.badge.rent         { background-color: #fff4cc; }
+.badge.buy          { background-color: #ffd6d6; }
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .list-card,
+body.dark-mode .movie-card {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .list-header h2 {
+    color: white;
+}
+
+body.dark-mode .list-description {
+    color: #bbb;
+}
+
+body.dark-mode .badge {
+    background-color: #444;
+    color: #eee;
+}
+
+body.dark-mode button {
+    background-color: #5A3C78;
+    color: white;
+}
+
+body.dark-mode .list-actions button {
+    background-color: #993333;
+}
+
+body.dark-mode .list-actions button:hover {
+    background-color: #cc4444;
+}
